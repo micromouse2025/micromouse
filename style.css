@@ -1,0 +1,165 @@
+
+/* Colors */
+html {
+  --crust: #dce0e8;
+  --mantle: #e6e9ef;
+  --base: #eff1f5;
+  --surface: #ccd0da;
+  --overlay: #9ca0b0;
+  --subtext: #6c6f85;
+  --text: #4c4f69;
+  --acc1: #5c5f77;
+  --acc2: #D20F39;
+  --acc3: #8839EF;
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    --crust: #11111b;
+    --mantle: #181825;
+    --base: #1e1e2e;
+    --surface: #313244;
+    --overlay: #6c7086;
+    --subtext: #a6adc8;
+    --text: #cdd6f4;
+    --acc1: #f9e2af;
+    --acc2: #74c7ec;
+    --acc3: #b4befe;
+  }
+}
+/* Font */
+@font-face {
+  font-family: "Gudea";
+  src: url('/font/Gudea');
+  src: url('/font/Gudea-Regular.ttf') format('truetype'),
+}
+/* Content */
+body {
+  background-color: var(--crust);
+  font-size: 1em;
+  max-width: 700px;
+  margin: auto;
+  font-family: Verdana, sans-serif;
+  color: var(--text);
+}
+section {
+  background-color: var(--base);
+  margin: 8px;
+  padding: 0px 16px 16px 16px;
+  border: 4px solid var(--overlay);
+  border-radius: 8px;
+}
+hr {
+  border: 2px solid var(--acc2);
+  border-radius: 4px;
+}
+img {
+  border: 4px solid var(--acc1);
+  border-radius: 8px;
+  padding: 3px;
+}
+/* Definitions */
+dl {
+  border: 2px solid var(--overlay);
+  border-radius: 8px;
+  padding: 4px;
+  width:50%;
+  margin:auto;
+}
+dt {
+  display: block;
+  border: 2px solid var(--overlay);
+  border-radius: 8px;
+  padding: 4px;
+}
+dd {
+  display: block;
+  border: 2px solid var(--overlay);
+  border-radius: 8px;
+  padding: 4px;
+  margin-left: 0px;
+  text-align: right;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+dt:hover {
+  border-color: var(--acc1);
+}
+dd:hover {
+  border-color: var(--acc2);
+}
+/* Tables */
+table {
+  width: 100%;
+}
+th,
+td {
+  border: 2px solid var(--overlay);
+  border-radius: 8px;
+}
+th:hover {
+  border-color: var(--acc1);
+}
+td:hover {
+  border-color: var(--acc2);
+}
+
+/* Text */
+h1,h2,h3,h4 {
+  color: var(--acc1);
+  font-family: "Gudea", Helvetica, sans-serif;
+  line-height: 1;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.75em;
+  line-height: 1;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.25em;
+}
+p {
+  text-indent: 1em;
+  line-height: 1.6;
+}
+/* Links */
+body a {
+  text-decoration-style: dashed;
+}
+body a:link {
+  color: var(--acc2);
+}
+body a:visited {
+  color: var(--acc3);
+}
+body a:hover {
+  color: var(--acc1);
+}
+/* Navbar */
+li {
+  display: inline;
+}
+nav {
+  background-color: var(--base);
+  border: 4px solid var(--overlay);
+  border-radius: 32px;
+}
+li a {
+  text-align: center;
+  padding: 10px;
+}
+
+li a:hover:not(.active) {
+  background-color: none;
+}
+
+.active {
+  background-color: var(--overlay);
+}
