@@ -28,10 +28,10 @@ html {
 }
 /* Font */
 @font-face {
-  font-family: "Gudea";
-  src: url('/micromouse/Gudea');
-  src: url('/micromouse/Gudea-Regular.ttf') format('truetype'),
+  font-family: 'Gudea';
+  src: url(./Gudea-Regular.woff) format('woff');
 }
+
 /* Content */
 body {
   background-color: var(--crust);
