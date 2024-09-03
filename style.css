@@ -29,8 +29,8 @@ html {
 /* Font */
 @font-face {
   font-family: "Gudea";
-  src: url('/font/Gudea');
-  src: url('/font/Gudea-Regular.ttf') format('truetype'),
+  src: url('/micromouse/Gudea');
+  src: url('/micromouse/Gudea-Regular.ttf') format('truetype'),
 }
 /* Content */
 body {
