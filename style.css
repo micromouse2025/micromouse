@@ -155,7 +155,3 @@ li a {
   text-align: center;
   padding: 10px;
 }
-
-li a:hover:.active {
-  background-color: var(--overlay);
-}
