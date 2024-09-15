@@ -131,16 +131,18 @@ p {
 }
 /* Links */
 body a {
-  text-decoration-style: dashed;
+  text-decoration-style: solid;
 }
 body a:link {
   color: var(--acc2);
 }
 body a:visited {
   color: var(--acc3);
+  text-decoration-style: dotted;
 }
 body a:hover {
   color: var(--acc1);
+  text-decoration-style: dashed;
 }
 /* Navbar */
 li {
