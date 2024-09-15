@@ -130,11 +130,9 @@ p {
   line-height: 1.6;
 }
 /* Links */
-body a {
-  text-decoration-style: solid;
-}
 body a:link {
   color: var(--acc2);
+  text-decoration-style: solid;
 }
 body a:visited {
   color: var(--acc3);
