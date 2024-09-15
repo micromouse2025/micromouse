@@ -156,10 +156,6 @@ li a {
   padding: 10px;
 }
 
-li a:hover:not(.active) {
-  background-color: none;
-}
-
-.active {
+li a:hover:.active {
   background-color: var(--overlay);
 }
