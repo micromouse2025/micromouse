@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Concluding Thoughts | Micromouse Senior Project</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!-- Header -->
+		<header>
+			<h1>Micromouse Project</h1>
+		</header>
+		<!-- Navigation -->
+		<nav>
+			<ul>
+				<li>
+					<a href="/micromouse/index.html">Project Overview</a>
+				</li>
+				<li>
+					<a href="/micromouse/design.html">Design</a>
+				</li>
+				<li>
+					<a href="/micromouse/progress.html">Progress</a>
+				</li>
+				<li>
+					<a href="/micromouse/competition.html">Competition</a>
+				</li>
+				<li>
+					<a href="/micromouse/team.html">Team Members</a>
+				</li>
+				<li>
+					<a href="/micromouse/conclusion.html">Concluding Thoughts</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Main -->
+		<main>
+			<!-- Results -->
+			<section>
+				<h2>Competition Results</h2>
+				<hr>
+				<p>Despite our best efforts, out micromouse was unable to complete the maze on the day of the competition. Multiple factors contributed to this, which will be detailed below. Of important note is that the robot was able to complete the 8x8 test maze provided the night before the competition, with a few difficulties.</p>
+			</section>
+			<!-- Analysis -->
+			<section>
+				<h2>Failure Analysis</h2>
+				<hr>
+				<ul>
+					<li> Did not turn at the right spot; Went too far for 1 maze square </li>
+					<ul>
+						<li> Encoder count target too large </li>
+						<li> Maze layout model incorrect </li>
+						<li> Speed command for motors was too high </li>
+						<li> Not ensuring 0 position error </li>
+					</ul>
+					<li> Front walls detected as false positives </li>
+					<ul>
+						<li> Front sensor threshold too low </li>
+					</ul>
+					<ul>
+						<li> Side walls detected as false positives </li>
+					</ul>
+					<ul>
+						<li> Sensor threshold too low </li>
+						<li> Angle error too high </li>
+					<ul>
+						<li> Angle controller </li>
+					</ul>
+					<li> Could not sense walls at certain angles </li>
+					<ul>
+						<li> Sensor positions on robot not optimal </li>
+						<li> Robot too large </li>
+						<li> Angle error too high </li>
+					<ul>
+						<li> Angle controller </li>
+					</ul>
+					<li> Did not turn 90 degrees consistently </li>
+					<ul>
+						<li> Not ensuring angle error = 0 </li>
+						<ul>
+							<li> Angle controller </li>
+						</ul>
+							<li> Slip in the wheels </li>
+							<li> Encoder data not being used properly </li>
+						</ul>
+					</ul>
+				</ul>
+					<h3>Common Problems</h3>
+					<hr>
+					<dl>
+						<dt> Position error </dt>
+						<dd> PD vs PID (faulty speed controller) </dd>
+						<dt> Angle error </dt>
+						<dd> Faulty angle controller </dd>
+						<dt> Imprecise internal measurements </dt>
+						<dd> Differences between test & competition maze </dd>
+					</dl>
+			</section>
+			<!-- Conclusion -->
+			<section>
+				<h2>Looking Forward</h2>
+				<hr>
+				<p>While we do not have the time or budget to fix out design and enter in another competition, we are aware that other students will be designing their own robots for this competition in the future. To that end, we will pass along a message, giving them advice on how to move forawrd with some aspects of the project that we struggled with. Even with a more self-contained senior project like this, communication is still important.</p>
+				<p>A significant amount of our struggles were the result of not being entirely clear on what the previous projects had left behind of their test maze. We intend to leave a next year's students with an accurate assessment of the state of the test maze, with advice on how to improve it. During the compeition and surrounding conference, we encountered the person who 3D printed the test maze provided the night before the competition. We are also leaving his business card with next year's students, increasing the amount of options they have available.</p>
+			</section>
+		</main>
+	</body>
+</html>
