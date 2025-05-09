@@ -1,4 +1,3 @@
-
 /* Colors */
 html {
   --crust: #dce0e8;
@@ -145,7 +144,7 @@ body a:hover {
   text-decoration-style: dashed;
 }
 /* Navbar */
-li {
+nav li {
   display: inline;
 }
 nav {
